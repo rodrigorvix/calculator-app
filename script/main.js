@@ -13,8 +13,17 @@ function initCalculator() {
         const result = calculator(display.innerHTML);
         display.innerHTML =
           result === "invalid expression" ? result : formatNumber(result);
-      } else if (display.innerHTML === "0" && display.innerHTML.length === 1) {
+      } else if (
+        (display.innerHTML === "0" && display.innerHTML.length === 1) ||
+        display.innerHTML === "invalid expression"
+      ) {
         display.innerHTML = button.innerText;
+      } else if (buttonTarget === ".") {
+        const existDot = display.innerHTML.indexOf(buttonTarget);
+        console.log(existDot);
+        if (existDot === -1) {
+          display.innerHTML += button.innerText;
+        }
       } else {
         display.innerHTML += button.innerText;
       }
