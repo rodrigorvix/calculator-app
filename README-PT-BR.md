@@ -2,7 +2,7 @@
     <img src="./images/calculator-icon.png" alt="My cool logo"/>
     <a href="https://rodrigorvix.github.io/challenges-frontendmentor/calculator-app">CALCULADORA APP</a>
 </h1>
-<h2 style='text-align:right'><a href=https://github.com/rodrigorvix/challenges-frontendmentor/blob/main/calculator-app/README.md><span align="rigth">🇺🇸</span></a></h2>
+<h2 style='text-align:right'><a href=https://github.com/rodrigorvix/calculator-app/blob/main/README.md><span align="rigth">🇺🇸</span></a></h2>
 
 <p align="center">
  <a href="#📷-Demonstração">Demonstração</a> •
