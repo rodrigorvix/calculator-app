@@ -11,25 +11,26 @@ function initCalculator() {
         display.innerHTML = resetScreen(display.innerHTML);
       } else if (buttonTarget === "=") {
         const result = calculator(display.innerHTML);
-        display.innerHTML =
-          result === "invalid expression" ? result : formatNumber(result);
+        display.innerHTML = result === "invalid expression" ? result : formatNumber(result);
       } else if (
         (display.innerHTML === "0" && display.innerHTML.length === 1) ||
         display.innerHTML === "invalid expression"
       ) {
         display.innerHTML = button.innerText;
-      } else if (buttonTarget === ".") {
-        const existDot = display.innerHTML.indexOf(buttonTarget);
 
-        if (existDot === -1) {
+      } else if (buttonTarget === ".") {
+          const existDot = display.innerHTML.indexOf(buttonTarget);
+          if (existDot === -1) {
           display.innerHTML += button.innerText;
-        }
+          }
       } else {
         display.innerHTML += button.innerText;
+       
       }
     });
   });
 }
+const operations = ['+','-','x','/'];
 
 function initCalculatorKeybord() {
   document.addEventListener("keydown", mapKeyboard);
