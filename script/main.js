@@ -20,7 +20,7 @@ function initCalculator() {
         display.innerHTML = button.innerText;
       } else if (buttonTarget === ".") {
         const existDot = display.innerHTML.indexOf(buttonTarget);
-        console.log(existDot);
+
         if (existDot === -1) {
           display.innerHTML += button.innerText;
         }
