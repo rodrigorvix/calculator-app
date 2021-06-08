@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt" data-theme="one">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Calculator App | Rodrigorvix | Frontend Mentor</title>
+</head>
+<body>
+  <div id="background-calc">
+    <div id="container">
+      <header class="header-calc">
+        <h1 class="title-calc">calc</h1>
+        
+        <div class="theme-box">
+          <span class="title-theme">theme</span>
+          <div>
+            <div class="theme-numbers">
+              <span>1</span>
+              <span>2</span>
+              <span>3</span>
+            </div>
+            <div class="theme-select"> 
+              <input type="radio" name="theme" id="theme-one" class="screen-reader-text">
+              <label for="theme-one" class="labels label-one"></label>
+              <input type="radio" name="theme" id="theme-two" class="screen-reader-text">  
+              <label for="theme-two" class="labels label-two"></label>             
+              <input type="radio" name="theme" id="theme-three" class="screen-reader-text">         
+              <label for="theme-three" class="labels label-three"></label>
+              <div class="label-select"></div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main>
+        <div class="display-calc">0</div>
+        <div class="buttons-calc">
+          <button id=key7>7</button>
+          <button id=key8>8</button>
+          <button id=key9>9</button>
+          <button id=keyDel class="del">del</button>
+          <button id=key4>4</button>
+          <button id=key5>5</button>
+          <button id=key6>6</button>
+          <button id=keySum>+</button>
+          <button id=key1>1</button>
+          <button id=key2>2</button>
+          <button id=key3>3</button>
+          <button id=keySubstraction>-</button>
+          <button id=keyDot>.</button>
+          <button id=key0>0</button>
+          <button id=keyBar>/</button>
+          <button id=keyMultiplication>x</button>
+          <button id=keyReset class="reset">reset</button>
+          <button id=keyEqual class="equal">=</button>
+      </div>
+      </main>  
+    </div>
+  </div>
+  
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/rodrigorvix">Rodrigorvix</a>.
+  </footer>
+
+  <script src="./script/main.js"></script>
+</body>
+</html>
