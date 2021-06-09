@@ -132,6 +132,8 @@ function themeSelect() {
     html.dataset.theme = "three";
   });
 }
+
 initCalculator();
 initCalculatorKeybord();
 themeSelect();
+
