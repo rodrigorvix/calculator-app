@@ -39,7 +39,7 @@ Neste projeto, os usuários devem ser capazes de:
 
 # 🔗 Links
 
-- URL da solução: [Calculadora App](https://rodrigorvix.github.io/challenges-frontendmentor/calculator-app/)
+- URL da solução: [Calculadora App](https://rodrigorvix.github.io/calculator-app/)
   <br><br>
 
 # 🛠 Tecnologias

@@ -38,7 +38,7 @@ In this project, the users should be able to:
 
 # 🔗 Links
 
-- Solution URL: [Calculator App](https://rodrigorvix.github.io/challenges-frontendmentor/calculator-app/)
+- Solution URL: [Calculator App](https://rodrigorvix.github.io/calculator-app/)
   <br><br>
 
 # 🛠 Technologies
