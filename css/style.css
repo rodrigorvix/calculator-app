@@ -63,13 +63,13 @@
   box-sizing: border-box;
   font-family: "Spartan", sans-serif;
 }
-
-#background-calc {
-  position: absolute;
+body {
   height: 100vh;
   width: 100vw;
   background-color: var(--background-main);
+  overflow: hidden;
 }
+
 #container {
   margin: 1.875rem auto 0;
   width: 88%;
@@ -207,7 +207,6 @@
   color: var(--text-color-equal);
 }
 @media (min-width: 420px) {
-  
   .buttons-calc {
     gap: 1.25rem;
     padding: 1.875rem;
@@ -226,8 +225,8 @@
     font-size: 1.25rem;
   }
 }
-@media(min-width: 1400px) {
-   #container {
+@media (min-width: 1400px) {
+  #container {
     margin-top: 6.25rem;
   }
   .buttons-calc {
