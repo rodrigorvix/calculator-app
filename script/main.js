@@ -18,11 +18,6 @@ function initCalculator() {
         display.innerHTML === "invalid expression"
       ) {
         display.innerHTML = button.innerText;
-      } else if (buttonTarget === ".") {
-        const existDot = display.innerHTML.indexOf(buttonTarget);
-        if (existDot === -1) {
-          display.innerHTML += button.innerText;
-        }
       } else if (
         buttonTarget === "+" ||
         buttonTarget === "-" ||
