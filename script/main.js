@@ -1,23 +1,41 @@
 function initCalculator() {
   const buttons = document.querySelectorAll(".buttons-calc button");
   const display = document.querySelector(".display-calc");
+  let blockExpression = '';
 
   buttons.forEach((button) => {
     button.addEventListener("click", (e) => {
       const buttonTarget = e.target.innerText;
+
       if (buttonTarget === "DEL") {
         display.innerHTML = deleteScreen(display.innerHTML);
+        blockExpression = display.innerHTML;
+
       } else if (buttonTarget === "RESET") {
         display.innerHTML = resetScreen(display.innerHTML);
+        blockExpression = display.innerHTML;
+
       } else if (buttonTarget === "=") {
         const result = calculator(display.innerHTML);
         display.innerHTML =
           result === "invalid expression" ? result : formatNumber(result);
+        blockExpression = display.innerHTML;
+
       } else if (
         (display.innerHTML === "0" && display.innerHTML.length === 1) ||
         display.innerHTML === "invalid expression"
       ) {
         display.innerHTML = button.innerText;
+        blockExpression = display.innerHTML;
+
+      } else if (buttonTarget === ".") {
+
+        const existDot = blockExpression.indexOf(buttonTarget);
+
+        if (existDot === -1) {
+          display.innerHTML += button.innerText;
+          blockExpression += button.innerText;
+        }
       } else if (
         buttonTarget === "+" ||
         buttonTarget === "-" ||
@@ -27,6 +45,8 @@ function initCalculator() {
         const lastElementDisplay = display.innerHTML.charAt(
           display.innerHTML.length - 1
         );
+        blockExpression = '';
+
         if (operations.indexOf(lastElementDisplay) !== -1) {
           display.innerHTML = display.innerHTML.slice(0, -1) + buttonTarget;
         } else {
@@ -34,6 +54,7 @@ function initCalculator() {
         }
       } else {
         display.innerHTML += button.innerText;
+        blockExpression += button.innerText
       }
     });
   });
@@ -70,7 +91,7 @@ const keysKeyboard = {
   ".": "keyDot",
   Enter: "keyEqual",
 };
-function deleteScreen(displayCurrent) {
+const deleteScreen = displayCurrent => {
   if (displayCurrent.length === 1) {
     displayCurrent = "0";
   } else {
@@ -78,10 +99,9 @@ function deleteScreen(displayCurrent) {
   }
   return displayCurrent;
 }
-function resetScreen(displayCurrent) {
-  return "0";
-}
-function calculator(displayCurrent) {
+const resetScreen = displayCurrent => "0";
+
+const calculator = displayCurrent => {
   displayCurrent = displayCurrent.replace(/[x]+/g, "*");
   try {
     return eval(displayCurrent);
@@ -89,7 +109,7 @@ function calculator(displayCurrent) {
     return "invalid expression";
   }
 }
-function formatNumber(number) {
+const formatNumber = number => {
   if (!Number.isInteger(number)) {
     number = number.toFixed(3);
     number = number.toString().replace(/(^0+(?=\d))|(,?0+$)/g, "");
