@@ -43,7 +43,7 @@ In this project, the users should be able to:
 
 # 🛠 Technologies
 
-The following tools were used in the construction of the project:
+The following technologies were used in the construction of the project:
 
 - [HTML5](https://developer.mozilla.org/en-US/docs/Glossary/HTML5)
 - [CSS3](https://developer.mozilla.org/pt-BR/docs/Web/CSS)

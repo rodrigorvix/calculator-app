@@ -5,8 +5,8 @@
 <h2 style='text-align:right'><a href=https://github.com/rodrigorvix/calculator-app/blob/main/README.md><span align="rigth">🇺🇸</span></a></h2>
 
 <p align="center">
- <a href="#📷-Demonstração">Demonstração</a> •
- <a href="#ℹ️-Sobre">Sobre</a> • 
+ <a href="#📷-demonstração">Demonstração</a> •
+ <a href="#ℹ️-sobre">Sobre</a> • 
  <a href="#🔗-links">Links</a> • 
  <a href="#🛠-tecnologias">Tecnologias</a> • 
  <a href="#📚-aprendizado">Aprendizado</a> • 
@@ -44,7 +44,7 @@ Neste projeto, os usuários devem ser capazes de:
 
 # 🛠 Tecnologias
 
-As seguintes ferramentas foram utilizadas na construção do projeto:
+As seguintes tecnologias foram utilizadas na construção do projeto:
 
 - [HTML5](https://developer.mozilla.org/en-US/docs/Glossary/HTML5)
 - [CSS3](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
@@ -66,7 +66,7 @@ Neste projeto, tive como principais desafios a utilização dos seguintes recurs
 # 👨‍💻 Autor
 
 - [Linkedin](https://www.linkedin.com/in/rodrigovitoriense/)
-- [Projects Frontend Mentor](https://www.frontendmentor.io/profile/rodrigorvix)
+- [Projetos Frontend Mentor](https://www.frontendmentor.io/profile/rodrigorvix)
   <br><br>
 
 # 👏 Agradecimentos
